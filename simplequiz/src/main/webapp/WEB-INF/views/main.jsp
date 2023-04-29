@@ -6,20 +6,40 @@
 <meta charset="UTF-8">
 <title>SimpleQuiz</title>
 <link rel="stylesheet" href="/resources/css/main.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
 <body>
 <div class="all_con">
-	<div class="footer_con">
-		<h1>하이</h1>
-	</div>
+<%@ include file="/WEB-INF/views/nav.jsp" %>
 	<div class="main_con">
 		<div class="game_con">
-			<div class="game_music">
-				<h1>음악맞추기</h1>
+			<div class="game_section" onclick="join(this)">
+				<div class="img_con"><img class="lavadon" src="http://ddragon.leagueoflegends.com/cdn/13.8.1/img/item/3089.png"></div>				
+				<div class="text_con"><span>LOL 아이템 이름 맞추기</span></div>				
+			</div>
+			<div class="game_section" onclick='join(this)'>
+				<div class="img_con"><img src="http://ddragon.leagueoflegends.com/cdn/13.8.1/img/item/3089.png"></div>				
+				<div class="text_con"><span>LOL 아이템 이름 맞추기</span></div>				
+			</div>
+			<div class="game_section" onclick='join(this)'>
+				<div class="img_con"><img src="http://ddragon.leagueoflegends.com/cdn/13.8.1/img/item/3089.png"></div>				
+				<div class="text_con"><span>LOL 아이템 이름 맞추기</span></div>				
+			</div>
+			<div class="game_section" onclick='join(this)'>
+				<div class="img_con"><img src="http://ddragon.leagueoflegends.com/cdn/13.8.1/img/item/3089.png"></div>				
+				<div class="text_con"><span>LOL 아이템 이름 맞추기</span></div>				
+			</div>
+			<div class="game_section" onclick='join(this)'>
+				<div class="img_con"><img src="http://ddragon.leagueoflegends.com/cdn/13.8.1/img/item/3089.png"></div>				
+				<div class="text_con"><span>LOL 아이템 이름 맞추기</span></div>				
+			</div>
+			<div class="game_section" onclick='join(this)'>
+				<div class="img_con"><img src="http://ddragon.leagueoflegends.com/cdn/13.8.1/img/item/3089.png"></div>				
+				<div class="text_con"><span>LOL 아이템 이름 맞추기</span></div>				
 			</div>
 		</div>
 	</div>
 </div>
-</body>
 <script src="/resources/js/main.js"></script>
+</body>
 </html>

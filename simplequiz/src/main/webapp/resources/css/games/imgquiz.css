@@ -1,0 +1,62 @@
+:root{
+	--text-color : #e6e6e6;
+	--game-color : #000;
+	--btn-color : #ff80c0;
+}
+
+body{
+	background-color : var(--game-color);
+	color : var(--text-color);
+}
+
+.all_con{
+	width : 80%;
+	display : flex;
+	margin : auto;
+}
+
+.ads_con{
+	width : 15%;	
+}
+
+.game_con{
+	text-align : center;
+	width : 50%;
+	height : 100%;
+	margin : 10%;
+}
+
+.game_con .img_con{
+	width : 100%;
+	height : 70%;
+	margin-bottom : 10%;
+}
+
+.game_con .img_con img{
+	width : 50%;
+	height : 50%;
+}
+
+.game_con .ans_con{
+	text-align : center;
+	width : 100%;
+	height : 20%;
+}
+
+.game_con .ans_con input{
+	width : 60%;
+	height : 100%;
+	font-size : 100%;
+}
+
+.game_con .ans_con button{
+	width : 20%;
+}
+
+.game_con .ans_con button img{
+	width : 20%;
+}
+
+.answer{
+	display : none;
+}

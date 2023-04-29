@@ -9,26 +9,55 @@ body{
 	color : var(--text-color);
 }
 
-.all_con{
-	width : 100%;
-	height : 100%;
+span{
+	font-size : 1rem;
 }
 
 /* footer */
-.footer_con{
+.nav_con{
 	width : 100%;
-	height : 20%;
 }
 
 
 /* main */
 .main_con{
 	width : 100%;
-	height : 80%;
 }
 
 .main_con .game_con{
+	display : flex;
+	flex-wrap : wrap;
+	justify-content : center;
 	width : 70%;
 	margin : 15%;
+}
+
+.main_con .game_con .game_section{
 	border : solid 1px var(--text-color);
+	width : 25%;
+	height : 25%;
+	margin : 4%;
+	text-align : center;
+}
+
+.game_section .img_con{
+	overflow : hidden;
+	width : 100%;
+	height : 80%;
+}
+
+.game_section .text_con{
+	width : 100%;
+	height : 20%;
+}
+
+.game_section .text_con span{
+	display : inline-block;
+	text-overflow : ellipsis;
+}
+
+/* section별 img관리 */
+.lavadon{
+	width : 100%;
+	height : 100%;
 }
