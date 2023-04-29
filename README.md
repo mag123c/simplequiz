@@ -9,6 +9,12 @@
 <details>
   <summary><h3>23.04.29</h3></summary>
   
-    LOL items json get -> image quiz Q.length=10
+    LOL items json get -> image quiz 10문제 
+<br> 
+  
+    issue
+    game div - text영역 크기 안줄어듬 (반응형)
+    nav - main 공간 어떻게 제어?
+    문제 끝났을 때 어떻게 할지.
   
 </details>
