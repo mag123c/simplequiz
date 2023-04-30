@@ -1,7 +1,12 @@
 const answer = document.querySelectorAll(".answer_span");	//answer dp:none
 const q_img = document.querySelector(".q_img");				//item img
 const ans_btn = document.querySelector(".answer_btn");		//answer btn
-const input = document.querySelector("input");
+const input = document.querySelector("input");				//answer input
+const game_con = document.querySelector(".game_con");		//game container
+const result_con = document.querySelector(".result_con");	//result container
+const result_txt = document.querySelector(".result_txt");	//result txt
+const restart_btn = document.querySelector(".restart_btn");	//restart button
+const home_btn = document.querySelector(".home_btn");	//home button
 var nameArr = [];
 var imgArr = [];
 var idx = 0;
@@ -52,8 +57,21 @@ function enter(e){
 
 /* game end */
 function result(cnt){
-	alert(cnt + "개 맞춤");
+	let span = document.createElement("span");
+	span.innerText = cnt+"개 맞추셨습니다. 계속 하시겠습니까?";
+	result_txt.append(span);
+	game_con.style.display = "none";
+	result_con.style.display = "block";
 }
+
+restart_btn.addEventListener('click', function(){
+	location.href="/lol/items";
+})
+
+home_btn.addEventListener('click', function(){
+	location.href="/";
+})
+	
 
 ans_btn.addEventListener('click', function(){
 	answer_chk();

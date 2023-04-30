@@ -17,13 +17,25 @@
 			<div class="ans_con">
 				<input type="text" onkeypress="enter(event)">
 				<button class="answer_btn">
-					<img src="/resources/img/cursor.png">
+					<img src="/resources/img/next.png">
 				</button>
 			</div>
 		</div>
 		<div class="ads_con"></div>
 	</div>
 	
+	<div class="result_con">
+		<div class="result_txt"></div>
+		<div class="result_btn">
+			<button class="home_btn">
+				<div class="result_home"><img src="/resources/img/home.png"><span>홈으로</span></div>
+			</button>
+			<button class="restart_btn">
+				<div class="result_restart"><img src="/resources/img/restart.png"><span>재시작</span></div>
+			</button>			
+		</div>
+	</div>
+
 	<!-- answer -->
 	<div class="answer">
 		<c:forEach var="answer" items="${list}">
